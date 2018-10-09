@@ -1,0 +1,484 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7152F0072261ED886DE66B54 /* Pods_Pexeso.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33B172099FF95E4115834C7F /* Pods_Pexeso.framework */; };
+		776AB19A216CD206002F865D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 776AB19C216CD206002F865D /* Localizable.strings */; };
+		776AB19D216CD488002F865D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E47DF2216CB6E1007A8D2A /* AppDelegate.swift */; };
+		776AB19E216CD48B002F865D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E47DF8216CB6E1007A8D2A /* ViewController.swift */; };
+		776AB1A0216CD4A7002F865D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77E47DEF216CB6E1007A8D2A /* Assets.xcassets */; };
+		776AB1A1216CD4B1002F865D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77E47DF6216CB6E1007A8D2A /* LaunchScreen.storyboard */; };
+		776AB1A2216CD4B1002F865D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77E47DF7216CB6E1007A8D2A /* Main.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		33B172099FF95E4115834C7F /* Pods_Pexeso.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pexeso.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E46A4F88221D89F69DE9C34 /* Pods-Pexeso.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pexeso.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Pexeso/Pods-Pexeso.debug.xcconfig"; sourceTree = "<group>"; };
+		776AB19B216CD206002F865D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		77E47DD7216CA493007A8D2A /* Pexeso.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pexeso.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		77E47DEF216CB6E1007A8D2A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		77E47DF0216CB6E1007A8D2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		77E47DF2216CB6E1007A8D2A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		77E47DF6216CB6E1007A8D2A /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		77E47DF7216CB6E1007A8D2A /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		77E47DF8216CB6E1007A8D2A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E34A849390D921F95E3E14D8 /* Pods-Pexeso.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pexeso.release.xcconfig"; path = "Pods/Target Support Files/Pods-Pexeso/Pods-Pexeso.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		77E47DD4216CA493007A8D2A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7152F0072261ED886DE66B54 /* Pods_Pexeso.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		174EEC9BDF19992C8E3A561B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				33B172099FF95E4115834C7F /* Pods_Pexeso.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		522D26FACBBFF575373061E9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6E46A4F88221D89F69DE9C34 /* Pods-Pexeso.debug.xcconfig */,
+				E34A849390D921F95E3E14D8 /* Pods-Pexeso.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		77E47DCE216CA493007A8D2A = {
+			isa = PBXGroup;
+			children = (
+				77E47DD9216CA493007A8D2A /* Pexeso */,
+				77E47DD8216CA493007A8D2A /* Products */,
+				522D26FACBBFF575373061E9 /* Pods */,
+				174EEC9BDF19992C8E3A561B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		77E47DD8216CA493007A8D2A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				77E47DD7216CA493007A8D2A /* Pexeso.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		77E47DD9216CA493007A8D2A /* Pexeso */ = {
+			isa = PBXGroup;
+			children = (
+				77E47DF1216CB6E1007A8D2A /* Application */,
+				77E47DF3216CB6E1007A8D2A /* BusinessLogic */,
+				77E47DF4216CB6E1007A8D2A /* Presentation */,
+				77E47DEE216CB6E1007A8D2A /* Resources */,
+			);
+			path = Pexeso;
+			sourceTree = "<group>";
+		};
+		77E47DEE216CB6E1007A8D2A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				77E47DEF216CB6E1007A8D2A /* Assets.xcassets */,
+				77E47DF0216CB6E1007A8D2A /* Info.plist */,
+				776AB19C216CD206002F865D /* Localizable.strings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		77E47DF1216CB6E1007A8D2A /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				77E47DF2216CB6E1007A8D2A /* AppDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		77E47DF3216CB6E1007A8D2A /* BusinessLogic */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = BusinessLogic;
+			sourceTree = "<group>";
+		};
+		77E47DF4216CB6E1007A8D2A /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				77E47DF5216CB6E1007A8D2A /* Storyboards */,
+				77E47DF8216CB6E1007A8D2A /* ViewController.swift */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		77E47DF5216CB6E1007A8D2A /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				77E47DF6216CB6E1007A8D2A /* LaunchScreen.storyboard */,
+				77E47DF7216CB6E1007A8D2A /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		77E47DD6216CA493007A8D2A /* Pexeso */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 77E47DE9216CA496007A8D2A /* Build configuration list for PBXNativeTarget "Pexeso" */;
+			buildPhases = (
+				77E47DED216CB41F007A8D2A /* SwiftGen */,
+				77E47DEC216CB293007A8D2A /* Swiftlint */,
+				D413E72FBC51749FE4130FC9 /* [CP] Check Pods Manifest.lock */,
+				77E47DD3216CA493007A8D2A /* Sources */,
+				77E47DD4216CA493007A8D2A /* Frameworks */,
+				77E47DD5216CA493007A8D2A /* Resources */,
+				79ADE2FDB93A7EBAF5FC8218 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Pexeso;
+			productName = Pexeso;
+			productReference = 77E47DD7216CA493007A8D2A /* Pexeso.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		77E47DCF216CA493007A8D2A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = "Den Ree";
+				TargetAttributes = {
+					77E47DD6216CA493007A8D2A = {
+						CreatedOnToolsVersion = 10.0;
+					};
+				};
+			};
+			buildConfigurationList = 77E47DD2216CA493007A8D2A /* Build configuration list for PBXProject "Pexeso" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 77E47DCE216CA493007A8D2A;
+			productRefGroup = 77E47DD8216CA493007A8D2A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				77E47DD6216CA493007A8D2A /* Pexeso */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		77E47DD5216CA493007A8D2A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				776AB1A2216CD4B1002F865D /* Main.storyboard in Resources */,
+				776AB1A1216CD4B1002F865D /* LaunchScreen.storyboard in Resources */,
+				776AB1A0216CD4A7002F865D /* Assets.xcassets in Resources */,
+				776AB19A216CD206002F865D /* Localizable.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		77E47DEC216CB293007A8D2A /* Swiftlint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = Swiftlint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "SWIFTLINT = ${PODS_ROOT}/SwiftLint/swiftlint\n\nif which SWIFTLINT > /dev/null; then\nSWIFTLINT lint --config .swiftlint.yml\nelse\necho \"error: SwiftLint does not exist, download it from https://github.com/realm/SwiftLint\"\nexit 1\nfi\n";
+		};
+		77E47DED216CB41F007A8D2A /* SwiftGen */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftGen;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "SWIFTGEN = ${PODS_ROOT}/SwiftGen/bin/swiftgen\n\nif which SWIFTGEN >/dev/null; then\nSWIFTGEN\nelse\necho \"warning: SwiftGen not installed, download it from https://github.com/SwiftGen/SwiftGen\"\nfi\n";
+		};
+		79ADE2FDB93A7EBAF5FC8218 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Pexeso/Pods-Pexeso-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Pexeso/Pods-Pexeso-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D413E72FBC51749FE4130FC9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Pexeso-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		77E47DD3216CA493007A8D2A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				776AB19E216CD48B002F865D /* ViewController.swift in Sources */,
+				776AB19D216CD488002F865D /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		776AB19C216CD206002F865D /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				776AB19B216CD206002F865D /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		77E47DE7216CA496007A8D2A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		77E47DE8216CA496007A8D2A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		77E47DEA216CA496007A8D2A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E46A4F88221D89F69DE9C34 /* Pods-Pexeso.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G8LE958X93;
+				INFOPLIST_FILE = Pexeso/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = app.denree.Pexeso;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		77E47DEB216CA496007A8D2A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E34A849390D921F95E3E14D8 /* Pods-Pexeso.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G8LE958X93;
+				INFOPLIST_FILE = Pexeso/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = app.denree.Pexeso;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		77E47DD2216CA493007A8D2A /* Build configuration list for PBXProject "Pexeso" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				77E47DE7216CA496007A8D2A /* Debug */,
+				77E47DE8216CA496007A8D2A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		77E47DE9216CA496007A8D2A /* Build configuration list for PBXNativeTarget "Pexeso" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				77E47DEA216CA496007A8D2A /* Debug */,
+				77E47DEB216CA496007A8D2A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 77E47DCF216CA493007A8D2A /* Project object */;
+}

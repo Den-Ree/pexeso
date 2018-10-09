@@ -1,0 +1,14 @@
+input_dir: Pexeso/
+output_dir: Pexeso/
+xcassets:
+  templateName: swift4
+  paths: Resources/Assets.xcassets
+  output: Resources/Assets-Constants.swift
+storyboards:
+  templateName: swift4
+  paths: Presentation/Storyboards/
+  output: Presentation/Storyboards/Storyboards.swift
+strings:
+  templateName: structured-swift4
+  paths: Resources/en.lproj/Localizable.strings
+  output: Resources/LocalizableStrings.swift

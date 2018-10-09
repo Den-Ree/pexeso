@@ -1,2 +1,2 @@
-# pexeso
+# Pexeso
 Concentration game

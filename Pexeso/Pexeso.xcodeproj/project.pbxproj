@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		7152F0072261ED886DE66B54 /* Pods_Pexeso.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33B172099FF95E4115834C7F /* Pods_Pexeso.framework */; };
+		771C93D5216E2C0A0043A42E /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 771C93D4216E2C0A0043A42E /* NetworkClient.swift */; };
 		776AB19A216CD206002F865D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 776AB19C216CD206002F865D /* Localizable.strings */; };
 		776AB19D216CD488002F865D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E47DF2216CB6E1007A8D2A /* AppDelegate.swift */; };
 		776AB1A0216CD4A7002F865D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77E47DEF216CB6E1007A8D2A /* Assets.xcassets */; };
@@ -39,6 +40,7 @@
 /* Begin PBXFileReference section */
 		33B172099FF95E4115834C7F /* Pods_Pexeso.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pexeso.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E46A4F88221D89F69DE9C34 /* Pods-Pexeso.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pexeso.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Pexeso/Pods-Pexeso.debug.xcconfig"; sourceTree = "<group>"; };
+		771C93D4216E2C0A0043A42E /* NetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
 		776AB19B216CD206002F865D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		776AB1A3216CE8CC002F865D /* Gameplay.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Gameplay.storyboard; sourceTree = "<group>"; };
 		776AB1BA216CEC20002F865D /* HighScoresListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighScoresListViewController.swift; sourceTree = "<group>"; };
@@ -97,6 +99,29 @@
 				E34A849390D921F95E3E14D8 /* Pods-Pexeso.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		771C93D1216E2BBA0043A42E /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				771C93D3216E2BCA0043A42E /* Network */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		771C93D2216E2BC10043A42E /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		771C93D3216E2BCA0043A42E /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				771C93D4216E2C0A0043A42E /* NetworkClient.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 		776AB1A5216CE902002F865D /* Scenes */ = {
@@ -312,6 +337,8 @@
 		77E47DF3216CB6E1007A8D2A /* BusinessLogic */ = {
 			isa = PBXGroup;
 			children = (
+				771C93D2216E2BC10043A42E /* Services */,
+				771C93D1216E2BBA0043A42E /* Core */,
 			);
 			path = BusinessLogic;
 			sourceTree = "<group>";
@@ -492,6 +519,7 @@
 				776AB1C7216CECCE002F865D /* MultiplePlayersResultsViewController.swift in Sources */,
 				776AB1D9216CEDB2002F865D /* GameplayBoardViewModel.swift in Sources */,
 				776AB1DD216CEDCE002F865D /* CreatePlayerViewController.swift in Sources */,
+				771C93D5216E2C0A0043A42E /* NetworkClient.swift in Sources */,
 				776AB1CB216CED0B002F865D /* MultiplePlayersGameViewModel.swift in Sources */,
 				776AB19D216CD488002F865D /* AppDelegate.swift in Sources */,
 				776AB1C5216CECA3002F865D /* MainFlowContext.swift in Sources */,

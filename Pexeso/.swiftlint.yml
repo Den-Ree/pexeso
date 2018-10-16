@@ -12,3 +12,4 @@ line_length:
 
 disabled_rules:
     - nesting
+    - identifier_name

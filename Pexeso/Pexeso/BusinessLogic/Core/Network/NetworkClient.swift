@@ -9,44 +9,68 @@
 import Foundation
 
 protocol AnyNetworkRequest {
-  var path: String {get}
+  var path: String { get }
+  var parameters: [String: String] { get }
 }
 
 protocol AnyNetworkResponse: Codable {}
 
 enum NetworkError: Error {
   case badRequestPath
+  case emptyResponse
 }
 
-protocol AnyNetworkService {
+protocol AnyNetworkClient {
   func send<Response: AnyNetworkResponse>(_ request: AnyNetworkRequest, completion: @escaping (Response?, Error?) -> Void) -> Int?
   func fetchData(from path: String, completion: @escaping (Data?, Error?) -> Void) -> Int?
+  func cancelRequest(withTaskId taskId: Int)
 }
 
-final class NetworkService {
+final class NetworkClient: AnyNetworkClient {
   // MARK: - Properties
   fileprivate let baseURLPath: String
   fileprivate let session: URLSession
   // MARK: - Init
-  required init(_ baseURLPath: String, session: URLSession = NetworkService.makeDefaultSession()) {
+  required init(_ baseURLPath: String, session: URLSession = URLSession.shared) {
     self.baseURLPath = baseURLPath
     self.session = session
   }
   // MARK: - Public
+  /// Generic method to send any request
+  ///
+  /// - Parameters:
+  ///   - request: api request, which contains path and paramters, if needed.
+  ///   - completion: a block, which is called when obtains a response
+  /// - Returns: downloading task id
   func send<Response: AnyNetworkResponse>(_ request: AnyNetworkRequest, completion: @escaping (Response?, Error?) -> Void) -> Int? {
-    guard let url = URL(string: baseURLPath + request.path) else {
+    // create url components
+    guard var urlComponenets = URLComponents(string: baseURLPath) else {
+      completion(nil, NetworkError.badRequestPath)
+      return nil
+    }
+    urlComponenets.path = request.path
+    urlComponenets.queryItems = request.parameters.map { (parameter) -> URLQueryItem in
+      return URLQueryItem(name: parameter.key, value: parameter.value)
+    }
+    guard let url = urlComponenets.url else {
       completion(nil, NetworkError.badRequestPath)
       return nil
     }
     // create request task
     let dataTask = session.dataTask(with: url, completionHandler: { (data, response, error) in
-      guard let data = data else {
+      if let error = error {
         completion(nil, error)
+        return
+      }
+      guard let data = data else {
+        completion(nil, NetworkError.emptyResponse)
         return
       }
       // parsing response
       DispatchQueue.global(qos: .background).async {
         do {
+          let jsonObject = try JSONSerialization.jsonObject(with: data, options: [])
+          print("\(jsonObject)")
           let result = try JSONDecoder().decode(Response.self, from: data)
           completion(result, nil)
         } catch {
@@ -59,6 +83,12 @@ final class NetworkService {
     dataTask.resume()
     return dataTask.taskIdentifier
   }
+  /// Method to fetch image's data from url
+  ///
+  /// - Parameters:
+  ///   - path: a url path to the image
+  ///   - completion: a block, which is called when obtains a response
+  /// - Returns: downloading task id
   func fetchData(from path: String, completion: @escaping (Data?, Error?) -> Void) -> Int? {
     guard let url = URL(string: path) else {
       completion(nil, nil)
@@ -70,23 +100,11 @@ final class NetworkService {
     dataTask.resume()
     return dataTask.taskIdentifier
   }
-}
-
-fileprivate extension NetworkService {
-  // MARK: - Private
-  /// Create default session with cache
-  ///
-  /// - Returns: session, which can be used for network requests
-  static func makeDefaultSession() -> URLSession {
-    let configuration = URLSessionConfiguration.default
-    configuration.requestCachePolicy = .returnCacheDataElseLoad
-    configuration.timeoutIntervalForRequest = 15
-    // setup cache size
-    let cacheSizeMemory = 10 * (1024 * 1024)
-    let cacheSizeDisk = 50 * (1024 * 1024)
-    let cache = URLCache(memoryCapacity: cacheSizeMemory, diskCapacity: cacheSizeDisk, diskPath: "networkclientcache")
-    configuration.httpAdditionalHeaders = URLSessionConfiguration.default.httpAdditionalHeaders
-    configuration.urlCache = cache
-    return URLSession(configuration: configuration)
+  func cancelRequest(withTaskId taskId: Int) {
+    session.getAllTasks { (tasks) in
+      if let canceledTask = tasks.first(where: {$0.taskIdentifier == taskId}) {
+        canceledTask.cancel()
+      }
+    }
   }
 }
